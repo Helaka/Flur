@@ -12,7 +12,6 @@
 <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/slippry.css">
 <link href="assets/css/style.css" rel="stylesheet" />
-<link href="assets/css/global.css" rel="stylesheet" />
 <link rel="stylesheet" href="assets/color/default.css">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -21,11 +20,18 @@
 <script src="assets/js/modernizr.custom.js"></script>
 </head>
 <body>
+  				 <?php
+  $connection=mysqli_connect("localhost","root","","flur");
+  
+ 
+  
+  
+  
+  ?>
 <header>
-
-<style>
+	<style>
 body {
-    background-image: url("1.jpg");
+    background-image: url("assets/img/slide/4.jpg");
 	background-repeat: no-repeat;
 	 background-position: center;
 	
@@ -40,13 +46,59 @@ box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
 }
 
 
+#exampleInputName{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+#exampleInputPhoneNumber{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+#exampleInputEmail{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+#exampleInputDeliveryZipCode{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+
+#exampleInputPassword{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+#exampleInputCPassword{
+	border: 2px solid #ccc;
+	border-radius: 8px;
+
+}
+.container-signin{
+	font-size:20px;
+	font-weight: bold;
+}
+
+
+
 h1{
 color:#fff;
 
 }
-.btn btn success btn-block{
-background-color: #4CAF50;
+.btn-btn-success-btn-block{
+background-color: #008CBA;
+width: 100%;
 
+color: black; 
+border: 2px solid #008CBA;
+border-radius: 8px
+
+}
+.btn-btn-success-btn-block:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 </style>
@@ -61,8 +113,9 @@ background-color: #4CAF50;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a class="navbar-brand" href="index.html"><img src="images/02-Logo Transparency.png" style="width:20%"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/02-Logo Transparency.png" style="width:20%"></a>
     </div>
+
 
 	<div class="navigation">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><nav>
@@ -74,50 +127,81 @@ background-color: #4CAF50;
       </ul></nav>
     </div><!-- /.navbar-collapse -->
 	</div>
+
   </div>
 </div>
 
 </header>
-
-<section id="intro">
-			<ul id="slippry-slider">
-			  <li>
-				<a href="#slide1"><img src="assets/img/slide/1.jpg" alt="Welcome to Flur!"></a>
-			  </li>
-			  <li>
-				<a href="#slide2"><img src="assets/img/slide/2.jpg"  alt="Flur Curated Cannabis"></a>
-			  </li>
-			  <li>
-				<a href="#slide3"><img src="assets/img/slide/3.jpg" ></a>
-			  </li>
-			</ul>
-</section>
-
-<section id="about" class="section">
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="heading">
-				<h3><span>About us</span></h3>
-			</div>
-			<div class="sub-heading">
-				<p>
-					Flur Curated Cannabis is a luxury estate-grown cannabis purveyor.
-					Flur searches near and far to find new and exotic strains of cannabis. 
-					All our products are tested and sampled for cannabinoid content, terpenes, flavor and smoke. 
-					Flur offers only the finest exotic flowers and artisan products. 
-				</p>
-			</div>
+<!-- section intro -->
+<div class="container-fluid">
+	<div class= "rows">
+		<div class ="col-md-4 col-sm-4 col-xs-12"></div>
+		<div class ="col-md-4 col-sm-4 col-xs-12">
+		
+		<form class="form-container" action="sendemail.php" method="post" enctype="multipart/form-data">
+	
+		<h1> Register Form  </h1>
+		<div class="img-log">
+			<img src="images/02-Logo Transparency.png" style="width:20%" >
 		</div>
+		
+			<div class="form-group">
+				<label for= "exampleInputName">Name</label>
+				<input type = "Text" name="name" class = "form-control" id = "exampleInputName" placeholder ="Name" required>
+			</div>
+			
+			
+			<div class="form-group">
+				<label for= "exampleInputPhoneNumber">Phone Number</label>
+				<input type = "number" name="PhoneNumber" class = "form-control" id = "exampleInputPhoneNumber" placeholder ="Phone Number" required>
+			</div>
+			<div class="form-group">
+				<label for= "exampleInputEmail">Email</label>
+				<input type = "email" name ="email" class = "form-control" id = "exampleInputEmail" placeholder ="Email">
+			</div>
+			<div class="form-group">
+				<label for= "exampleInputDeliveryZipCode">Zip Code</label>
+				<input type = "number" name="zipcode" class = "form-control" id = "exampleInputDeliveryZipCode" placeholder ="Delivery Zip Code" required>
+			</div>
+			<div class="form-group">
+				<label for= "exampleInputDeliveryZipCode">Invitation Code</label>
+				<input type = "number" name="invitationcode" class = "form-control" id = "exampleInputDeliveryZipCode" placeholder ="Invitation Code" required>
+			</div>
+			
+			
+			<div class="form-group">
+				<label for= "exampleInputPassword">Password</label>
+				<input type = "password" name = "password" class = "form-control" id = "exampleInputPassword" name="p" placeholder ="Password" required>
+			</div>
+			
+			<div class="form-group">
+				<label for= "exampleInputCPassword">Confirm Password</label>
+				<input type = "password" name="re-password" class = "form-control" id = "exampleInputCPassword" name="cp" placeholder ="Confirm Password" required>
+			</div>
+			
+		<button type ="submit" name="register" class = "btn-btn-success-btn-block" onclick="myFunction()">Submit</button><br>
+		
+		<div class="container-signin">
+    <p>Already have an account? <a href="lol.html">Sign in</a>.</p>
+  </div>
+  
+  	<?php
+         if(isset($_GET['Message'])){
+            echo $_GET['Message'];
+         }
+     ?>
+		
+		</form>
+		
+		</div>
+			<div class ="col-md-4 col-sm-4 col-xs-12">
+				
+			</div>
+	
 	</div>
-	<div class="row">
-		
-		
-		
-	</div>
-</div>
-</section>
 
+
+</div>
 <footer>
 <div class="verybottom">
 	<div class="container">
@@ -207,7 +291,6 @@ background-color: #4CAF50;
         }
     }
 </script>
-
 
 
 </body>
