@@ -32,7 +32,7 @@
 
 <LINK REL="SHORTCUT ICON"
 
-       HREF="images/favicon.ico">
+       HREF="assets/images/favicon.ico">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 
@@ -224,7 +224,7 @@ border-radius: 8px
 
       </button>
 
-      <a class="navbar-brand" href="index.html"><img src="images/02-Logo Transparency.png" style="width:20%"></a>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/02-Logo Transparency.png" style="width:20%"></a>
 
     </div>
 
@@ -280,7 +280,7 @@ border-radius: 8px
 
 		<div align="center" >
 
-			<img src="images/02-Logo Transparency.png" style="width:25%" id="logo"  >
+			<img src="assets/images/02-Logo Transparency.png" style="width:25%" id="logo"  >
 
 		</div>
 
