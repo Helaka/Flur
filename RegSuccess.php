@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="assets/color/default.css">
 
 <LINK REL="SHORTCUT ICON"
-       HREF="assets/images/favicon.ico">
+       HREF="images/favicon.ico">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -102,7 +102,7 @@ border-radius: 8px
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="assets/images/02-Logo Transparency.png" style="width:20%"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/02-Logo Transparency.png" style="width:20%"></a>
     </div>
 
 
@@ -130,7 +130,7 @@ border-radius: 8px
 		<form class="form-container">
 		
 		<div align="center">
-			<img src="assets/images/02-Logo Transparency.png" style="width:25%" >
+			<img src="images/02-Logo Transparency.png" style="width:25%" >
 		</div>
 		<h1 align="center"> Registered Successfully! </h1>
 		

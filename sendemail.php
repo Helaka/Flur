@@ -19,8 +19,8 @@ if(isset($_POST['register'])){
 	
 	if(mail($to,$subject,$message,$headers))
 	{
-		$Message = urlencode("<h1>Sent Successfully! Thank you"." ".$name.",for submit your request for membership. A flur Curtor will be in touch with you shortly!</h1>");
-		 header('Location:register.php?Message='.$Message); 
+		
+		 header('Location:RegSuccess.php'); 
 		   exit;
 		
  }
