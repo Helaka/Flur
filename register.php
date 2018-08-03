@@ -421,7 +421,7 @@ border-radius: 8px
 
 					<p>
 
-						 &copy;2015 Groovin - All right reserved | Designed by <a href="http://bootstraptaste.com">BootstrapTaste</a>.
+						 
 
 					</p>
 

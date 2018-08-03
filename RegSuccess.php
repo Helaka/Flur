@@ -24,7 +24,7 @@
 </head>
 <body>
 <header>
-	<style>
+<style>
 body {
 	
     background-image: url("assets/images/8.jpg");
@@ -172,7 +172,7 @@ border-radius: 8px
 			<div class="col-md-12">
 				<div class="aligncenter">
 					<p>
-						 &copy;2015 Groovin - All right reserved | Designed by <a href="http://bootstraptaste.com">BootstrapTaste</a>.
+						
 					</p>
                     <!-- 
                         All links in the footer should remain intact. 
