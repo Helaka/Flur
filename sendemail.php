@@ -12,7 +12,7 @@ if(isset($_POST['register'])){
 	$psw=$_POST['password']; 
 	
 	
-	$to='membership@flurcannabis.com';
+	$to='pmihindu7@gmail.com';
 	$subject='Form Submission';
 	$message="Name: ".$name."\n"."Phone Number: ".$phone."\n"."Email: ".$mail."\n"."Zip Code: ".$zip."\n"."Invitetion Code".$invitation;
 	$headers ="From: ".$mail;

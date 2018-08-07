@@ -123,10 +123,7 @@ box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
 
 
 }
-
-
-
-#exampleInputPassword{
+#exampleInputInvitationCode{
 
 	border: 2px solid #ccc;
 
@@ -136,15 +133,8 @@ box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
 
 }
 
-#exampleInputCPassword{
-
-	border: 2px solid #ccc;
-
-	border-radius: 8px;
 
 
-
-}
 
 .container-signin{
 
@@ -326,21 +316,7 @@ border-radius: 8px
 
 			</div>
 
-			<div class="form-group">
-
-				<label for= "exampleInputPassword">Password</label>
-
-				<input type = "password" name="password" class = "form-control" id = "exampleInputPassword"  placeholder ="Password" required></div>
-
 			
-
-			<div class="form-group">
-
-				<label for= "exampleInputCPassword">Confirm Password</label>
-
-				<input type = "password" name="re-password" class = "form-control" id = "exampleInputCPassword" placeholder ="Confirm Password" required>
-
-			</div>
 
 			
 

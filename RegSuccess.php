@@ -89,6 +89,9 @@ border-radius: 8px
 .btn-btn-success-btn-block:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+h3.b {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 </style>
 
@@ -132,13 +135,14 @@ border-radius: 8px
 		<div align="center">
 			<img src="images/02-Logo Transparency.png" style="width:25%" >
 		</div>
-		<h1 align="center"> Registered Successfully! </h1>
+		<h1 align="center"></h1>
 		
 			
 			
 			<div class="form-group">
-				<h3 align="center">Thank you,<br> for submit your request for membership.<br> A flur Curtor will be in touch with you shortly!
-				</h1>
+				<h3 align="center" class="b" >Thank you for requesting membership.
+ <br><br>A Flur curator will be in touch with you shortly!
+				</h3>
   </div>
 		
 		</form>
